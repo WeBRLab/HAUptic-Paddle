@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 
-set(PICO_SDK_PATH /home/chandler/External/pico/pico-sdk)
-include(${PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+#set(PICO_SDK_PATH /home/chandler/External/pico/pico-sdk)
+include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 include_directories(include
 ${CMAKE_CURRENT_LIST_DIR}
 )
