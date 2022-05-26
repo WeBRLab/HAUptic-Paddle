@@ -9,7 +9,7 @@ include_directories(include
 
 project(lcd C CXX ASM)
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_CXX_STANDAR 17)
+set(CMAKE_CXX_STANDAR 20)
 
 pico_sdk_init()
 
