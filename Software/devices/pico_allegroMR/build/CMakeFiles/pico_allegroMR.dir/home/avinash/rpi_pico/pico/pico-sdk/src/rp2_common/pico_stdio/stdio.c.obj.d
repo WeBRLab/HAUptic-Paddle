@@ -46,8 +46,4 @@ CMakeFiles/pico_allegroMR.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common
  /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h \
  /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
  /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio/driver.h \
- /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
- /home/avinash/rpi_pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
- /home/avinash/rpi_pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
- /home/avinash/rpi_pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
+ /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h

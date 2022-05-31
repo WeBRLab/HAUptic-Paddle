@@ -13,20 +13,14 @@ int main()
 
     // Constants
     uint16_t position = 0;
-    uint16_t loopTime = 1;
-    uint16_t endTime = 0;
-    uint16_t startTime = 0;
-    uint16_t reference = 0;
-    uint16_t kp = 1;
-    uint16_t kd = 0;
 
     while (true)
     {
         uint16_t prevPosition = position;
         uint16_t position = adc_read();
-            gpio_put(PIN, 0);
-            uint16_t ctrl = kp * position + kd * (prevPosition + position) / loopTime;  // Control Equation
-            gpio_put(PIN, 1);
+        printf("Blinking!\r\n");
+            // gpio_put(PIN, 0);
+            // gpio_put(PIN, 1);
         // }
     }
 }
