@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 # point out the CMake, where to find the executable source file
 add_executable(${PROJECT_NAME}
-        src/linearizeMR.c # NOTE: Added by chandler. -- I find it more intutitve to have my source code in a /src folder below by CMakeList,
+        src/linearizeMR.cpp # NOTE: Added by chandler. -- I find it more intutitve to have my source code in a /src folder below by CMakeList,
 			  # this isn't a rule, but it's how ROS does it, so I got used to it.
 )
 # create map/bin/hex/uf2 files.
