@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/adc.h"
+#include <math.h>
+
+
+uint32_t linearize(uint32_t reading,uint32_t calibrationCenter,uint32_t calibrationFactor,uint32_t paddleRadius) {
+        uint32_t result = abs((reading-calibrationCenter)*(3.30/4095.00)*calibrationFactor*paddleRadius);
+        return result; 
+}
 
 int main()
 {
@@ -19,11 +26,11 @@ int main()
     
     while (1)
     {
-        uint16_t prevPosition = position;
-        uint16_t position = adc_read();
-        printf("%.2f \n", (float)position*3.3/4095.0);
-        // sleep_ms(500);
+        uint32_t sensorReading = adc_read();
+        uint32_t calibrationFactor = 300;  //    [degree/Volt]
+        uint32_t calibrationCenter = 3000.00;  //    []
+        uint32_t paddleRadius = 1;  //    [m]
+        uint32_t travelDistance = linearize(sensorReading,calibrationCenter,calibrationFactor,paddleRadius);
+        printf("%.2f \n", (float)travelDistance);
     }
 }
-
-

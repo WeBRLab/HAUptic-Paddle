@@ -58,4 +58,8 @@ CMakeFiles/pico_allegroMR.dir/src/linearizeMR.cpp.obj: \
  /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
  /home/avinash/rpi_pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
- /home/avinash/rpi_pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
+ /home/avinash/rpi_pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
+ /usr/include/newlib/c++/6.3.1/math.h /usr/include/newlib/c++/6.3.1/cmath \
+ /usr/include/newlib/c++/6.3.1/bits/cpp_type_traits.h \
+ /usr/include/newlib/c++/6.3.1/ext/type_traits.h \
+ /usr/include/newlib/math.h
