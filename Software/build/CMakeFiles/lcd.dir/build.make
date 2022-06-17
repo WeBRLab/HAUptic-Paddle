@@ -57,18 +57,18 @@ include CMakeFiles/lcd.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lcd.dir/flags.make
 
-CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj: CMakeFiles/lcd.dir/flags.make
-CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj: ../lib/pico_lcd/pico_lcd_i2c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chandler/Projects/hAUptic-paddle/Software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj -c /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd_i2c.cpp
+CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj: CMakeFiles/lcd.dir/flags.make
+CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj: ../lib/pico_lcd/pico_lcd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chandler/Projects/hAUptic-paddle/Software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj -c /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd.cpp
 
-CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd_i2c.cpp > CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.i
+CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd.cpp > CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.i
 
-CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd_i2c.cpp -o CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.s
+CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd.cpp -o CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.s
 
 CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/lcd.dir/flags.make
 CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -582,7 +582,7 @@ CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_
 
 # Object files for target lcd
 lcd_OBJECTS = \
-"CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj" \
+"CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj" \
 "CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
@@ -633,7 +633,7 @@ lcd_OBJECTS = \
 # External object files for target lcd
 lcd_EXTERNAL_OBJECTS =
 
-liblcd.a: CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj
+liblcd.a: CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj
 liblcd.a: CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 liblcd.a: CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 liblcd.a: CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj

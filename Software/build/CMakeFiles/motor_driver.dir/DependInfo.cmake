@@ -65,6 +65,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../include"
   "../"
+  "../lib/pico_rob14450"
   "/home/chandler/External/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/chandler/External/pico/pico-sdk/src/common/pico_base/include"
@@ -186,6 +187,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../"
+  "../lib/pico_rob14450"
   "/home/chandler/External/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/chandler/External/pico/pico-sdk/src/common/pico_base/include"
@@ -227,7 +229,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/chandler/Projects/hAUptic-paddle/Software/build/CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
-  "/home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/ROB14450.cpp" "/home/chandler/Projects/hAUptic-paddle/Software/build/CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj"
+  "/home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/pico_rob14450.cpp" "/home/chandler/Projects/hAUptic-paddle/Software/build/CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -276,6 +278,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../"
+  "../lib/pico_rob14450"
   "/home/chandler/External/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/chandler/External/pico/pico-sdk/src/common/pico_base/include"

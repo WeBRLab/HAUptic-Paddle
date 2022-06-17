@@ -909,7 +909,7 @@ CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/
  generated/pico_base/pico/version.h
 CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj
+CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj
  /home/chandler/External/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/chandler/External/pico/pico-sdk/src/common/pico_base/include/pico.h
  /home/chandler/External/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -941,7 +941,7 @@ CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
- /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/ROB14450.cpp
- /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/ROB14450.h
+ /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/pico_rob14450.cpp
+ /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/pico_rob14450.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h

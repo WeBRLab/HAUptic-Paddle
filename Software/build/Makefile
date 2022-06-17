@@ -1501,59 +1501,59 @@ home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-lib/pico_lcd/pico_lcd_i2c.obj: lib/pico_lcd/pico_lcd_i2c.cpp.obj
+lib/pico_lcd/pico_lcd.obj: lib/pico_lcd/pico_lcd.cpp.obj
 
-.PHONY : lib/pico_lcd/pico_lcd_i2c.obj
-
-# target to build an object file
-lib/pico_lcd/pico_lcd_i2c.cpp.obj:
-	$(MAKE) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj
-.PHONY : lib/pico_lcd/pico_lcd_i2c.cpp.obj
-
-lib/pico_lcd/pico_lcd_i2c.i: lib/pico_lcd/pico_lcd_i2c.cpp.i
-
-.PHONY : lib/pico_lcd/pico_lcd_i2c.i
-
-# target to preprocess a source file
-lib/pico_lcd/pico_lcd_i2c.cpp.i:
-	$(MAKE) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.i
-.PHONY : lib/pico_lcd/pico_lcd_i2c.cpp.i
-
-lib/pico_lcd/pico_lcd_i2c.s: lib/pico_lcd/pico_lcd_i2c.cpp.s
-
-.PHONY : lib/pico_lcd/pico_lcd_i2c.s
-
-# target to generate assembly for a file
-lib/pico_lcd/pico_lcd_i2c.cpp.s:
-	$(MAKE) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.s
-.PHONY : lib/pico_lcd/pico_lcd_i2c.cpp.s
-
-lib/pico_rob14450/ROB14450.obj: lib/pico_rob14450/ROB14450.cpp.obj
-
-.PHONY : lib/pico_rob14450/ROB14450.obj
+.PHONY : lib/pico_lcd/pico_lcd.obj
 
 # target to build an object file
-lib/pico_rob14450/ROB14450.cpp.obj:
-	$(MAKE) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj
-.PHONY : lib/pico_rob14450/ROB14450.cpp.obj
+lib/pico_lcd/pico_lcd.cpp.obj:
+	$(MAKE) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj
+.PHONY : lib/pico_lcd/pico_lcd.cpp.obj
 
-lib/pico_rob14450/ROB14450.i: lib/pico_rob14450/ROB14450.cpp.i
+lib/pico_lcd/pico_lcd.i: lib/pico_lcd/pico_lcd.cpp.i
 
-.PHONY : lib/pico_rob14450/ROB14450.i
+.PHONY : lib/pico_lcd/pico_lcd.i
 
 # target to preprocess a source file
-lib/pico_rob14450/ROB14450.cpp.i:
-	$(MAKE) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.i
-.PHONY : lib/pico_rob14450/ROB14450.cpp.i
+lib/pico_lcd/pico_lcd.cpp.i:
+	$(MAKE) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.i
+.PHONY : lib/pico_lcd/pico_lcd.cpp.i
 
-lib/pico_rob14450/ROB14450.s: lib/pico_rob14450/ROB14450.cpp.s
+lib/pico_lcd/pico_lcd.s: lib/pico_lcd/pico_lcd.cpp.s
 
-.PHONY : lib/pico_rob14450/ROB14450.s
+.PHONY : lib/pico_lcd/pico_lcd.s
 
 # target to generate assembly for a file
-lib/pico_rob14450/ROB14450.cpp.s:
-	$(MAKE) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.s
-.PHONY : lib/pico_rob14450/ROB14450.cpp.s
+lib/pico_lcd/pico_lcd.cpp.s:
+	$(MAKE) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.s
+.PHONY : lib/pico_lcd/pico_lcd.cpp.s
+
+lib/pico_rob14450/pico_rob14450.obj: lib/pico_rob14450/pico_rob14450.cpp.obj
+
+.PHONY : lib/pico_rob14450/pico_rob14450.obj
+
+# target to build an object file
+lib/pico_rob14450/pico_rob14450.cpp.obj:
+	$(MAKE) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj
+.PHONY : lib/pico_rob14450/pico_rob14450.cpp.obj
+
+lib/pico_rob14450/pico_rob14450.i: lib/pico_rob14450/pico_rob14450.cpp.i
+
+.PHONY : lib/pico_rob14450/pico_rob14450.i
+
+# target to preprocess a source file
+lib/pico_rob14450/pico_rob14450.cpp.i:
+	$(MAKE) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.i
+.PHONY : lib/pico_rob14450/pico_rob14450.cpp.i
+
+lib/pico_rob14450/pico_rob14450.s: lib/pico_rob14450/pico_rob14450.cpp.s
+
+.PHONY : lib/pico_rob14450/pico_rob14450.s
+
+# target to generate assembly for a file
+lib/pico_rob14450/pico_rob14450.cpp.s:
+	$(MAKE) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.s
+.PHONY : lib/pico_rob14450/pico_rob14450.cpp.s
 
 src/main.obj: src/main.cpp.obj
 
@@ -1716,12 +1716,12 @@ help:
 	@echo "... home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... lib/pico_lcd/pico_lcd_i2c.obj"
-	@echo "... lib/pico_lcd/pico_lcd_i2c.i"
-	@echo "... lib/pico_lcd/pico_lcd_i2c.s"
-	@echo "... lib/pico_rob14450/ROB14450.obj"
-	@echo "... lib/pico_rob14450/ROB14450.i"
-	@echo "... lib/pico_rob14450/ROB14450.s"
+	@echo "... lib/pico_lcd/pico_lcd.obj"
+	@echo "... lib/pico_lcd/pico_lcd.i"
+	@echo "... lib/pico_lcd/pico_lcd.s"
+	@echo "... lib/pico_rob14450/pico_rob14450.obj"
+	@echo "... lib/pico_rob14450/pico_rob14450.i"
+	@echo "... lib/pico_rob14450/pico_rob14450.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -44,7 +44,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
-  "CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj"
+  "CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj"
   "libmotor_driver.a"
   "libmotor_driver.pdb"
 )

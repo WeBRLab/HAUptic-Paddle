@@ -939,7 +939,7 @@ CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdl
  generated/pico_base/pico/version.h
 CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj
+CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj
  /home/chandler/External/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/chandler/External/pico/pico-sdk/src/common/pico_base/include/pico.h
  /home/chandler/External/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -975,7 +975,7 @@ CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
  /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
- /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd_i2c.cpp
- /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd_i2c.hpp
+ /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd.cpp
+ /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_lcd/pico_lcd.hpp
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h

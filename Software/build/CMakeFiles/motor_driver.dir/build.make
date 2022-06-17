@@ -57,18 +57,18 @@ include CMakeFiles/motor_driver.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/motor_driver.dir/flags.make
 
-CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj: CMakeFiles/motor_driver.dir/flags.make
-CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj: ../lib/pico_rob14450/ROB14450.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chandler/Projects/hAUptic-paddle/Software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj -c /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/ROB14450.cpp
+CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj: CMakeFiles/motor_driver.dir/flags.make
+CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj: ../lib/pico_rob14450/pico_rob14450.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chandler/Projects/hAUptic-paddle/Software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj -c /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/pico_rob14450.cpp
 
-CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/ROB14450.cpp > CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.i
+CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/pico_rob14450.cpp > CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.i
 
-CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/ROB14450.cpp -o CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.s
+CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450/pico_rob14450.cpp -o CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.s
 
 CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/motor_driver.dir/flags.make
 CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -569,7 +569,7 @@ CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/
 
 # Object files for target motor_driver
 motor_driver_OBJECTS = \
-"CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj" \
+"CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj" \
 "CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
@@ -619,7 +619,7 @@ motor_driver_OBJECTS = \
 # External object files for target motor_driver
 motor_driver_EXTERNAL_OBJECTS =
 
-libmotor_driver.a: CMakeFiles/motor_driver.dir/lib/pico_rob14450/ROB14450.cpp.obj
+libmotor_driver.a: CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.obj
 libmotor_driver.a: CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 libmotor_driver.a: CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 libmotor_driver.a: CMakeFiles/motor_driver.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj

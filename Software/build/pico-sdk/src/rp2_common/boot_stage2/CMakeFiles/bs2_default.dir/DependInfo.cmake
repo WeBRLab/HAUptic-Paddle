@@ -20,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/chandler/Projects/hAUptic-paddle/Software/include"
   "/home/chandler/Projects/hAUptic-paddle/Software"
+  "/home/chandler/Projects/hAUptic-paddle/Software/lib/pico_rob14450"
   "/home/chandler/External/pico/pico-sdk/src/rp2_common/boot_stage2/asminclude"
   "/home/chandler/External/pico/pico-sdk/src/rp2040/hardware_regs/include"
   "/home/chandler/External/pico/pico-sdk/src/rp2_common/hardware_base/include"

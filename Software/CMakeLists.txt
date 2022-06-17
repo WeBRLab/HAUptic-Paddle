@@ -5,6 +5,7 @@ include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
 include_directories(include
     ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}/lib/pico_rob14450
 )
 
 project(main C CXX ASM)
@@ -12,11 +13,6 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 20)
 
 pico_sdk_init()
-
-# Create the executable for main.cpp
-add_executable(${PROJECT_NAME}
-    src/main.cpp
-)
 
 # Add and link the LCD library
 add_library(lcd
@@ -36,6 +32,10 @@ target_link_libraries(motor_driver
     hardware_pwm
 )
 
+# Create the executable for main.cpp
+add_executable(${PROJECT_NAME}
+    src/main.cpp
+)
 target_link_libraries(${PROJECT_NAME}
     pico_stdlib
     hardware_adc

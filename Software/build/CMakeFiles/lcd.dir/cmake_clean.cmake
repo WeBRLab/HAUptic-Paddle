@@ -45,7 +45,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "CMakeFiles/lcd.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
-  "CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd_i2c.cpp.obj"
+  "CMakeFiles/lcd.dir/lib/pico_lcd/pico_lcd.cpp.obj"
   "liblcd.a"
   "liblcd.pdb"
 )

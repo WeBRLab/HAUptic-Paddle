@@ -966,6 +966,8 @@ CMakeFiles/main.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_std
 
 CMakeFiles/main.dir/home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/chandler/External/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
+CMakeFiles/main.dir/src/main.cpp.obj: ../include/pin_definitions.h
+CMakeFiles/main.dir/src/main.cpp.obj: ../lib/pico_rob14450/pico_rob14450.h
 CMakeFiles/main.dir/src/main.cpp.obj: /home/chandler/External/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/main.dir/src/main.cpp.obj: /home/chandler/External/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/main.dir/src/main.cpp.obj: /home/chandler/External/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
