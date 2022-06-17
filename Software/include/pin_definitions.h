@@ -8,7 +8,8 @@ const int A2_PIN = 4;
 const int PWMA_PIN = 26;
 
 // Hall Effect Sensor
-const int SENSOR_PIN = 27;
+const int SENSOR_PIN = 27; // GPIO address
+const int Xiao_pin = 1; // ADC address
 
 // I2C Pins Reserved
 const int SDA = 4;

@@ -34,7 +34,7 @@ target_link_libraries(motor_driver
 
 # Create the executable for main.cpp
 add_executable(${PROJECT_NAME}
-    src/main.cpp
+    src/PD.cpp
 )
 target_link_libraries(${PROJECT_NAME}
     pico_stdlib

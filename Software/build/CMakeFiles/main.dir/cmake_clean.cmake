@@ -82,8 +82,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
-  "CMakeFiles/main.dir/src/main.cpp.obj"
-  "CMakeFiles/main.dir/src/main.cpp.obj.d"
+  "CMakeFiles/main.dir/src/PD.cpp.obj"
+  "CMakeFiles/main.dir/src/PD.cpp.obj.d"
   "main.elf"
   "main.pdb"
 )
