@@ -2,10 +2,10 @@
 #define PIN_DEFINITIONS_H_
 
 // Motor Drive Pins
-const int STDBY_PIN  = 7;
-const int A1_PIN = 8;
-const int A2_PIN = 9;
-const int PWMA_PIN = 0;
+const int STDBY_PIN  = 1;
+const int A1_PIN = 2;
+const int A2_PIN = 4;
+const int PWMA_PIN = 26;
 
 // Hall Effect Sensor
 const int SENSOR_PIN = 1;

@@ -18,16 +18,16 @@ Linker script and memory map
                 0x0000000020041fcc                literals
 LOAD CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
 START GROUP
-LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
-LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v6-m/libg.a
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v6-m/libc.a
 END GROUP
 START GROUP
-LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
-LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
-LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v6-m/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a
 END GROUP
 OUTPUT(bs2_default.elf elf32-littlearm)
-LOAD linker stubs
 
 .data           0x0000000020041ff0        0x0
  .data          0x0000000020041ff0        0x0 CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
@@ -60,3 +60,16 @@ LOAD linker stubs
                 0x0000000000000000       0x22
  .ARM.attributes
                 0x0000000000000000       0x22 CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
+
+.debug_line     0x0000000000000000      0x1a7
+ .debug_line    0x0000000000000000      0x1a7 CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
+
+.debug_info     0x0000000000000000       0xdc
+ .debug_info    0x0000000000000000       0xdc CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
+
+.debug_abbrev   0x0000000000000000       0x14
+ .debug_abbrev  0x0000000000000000       0x14 CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
+
+.debug_aranges  0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 CMakeFiles/bs2_default.dir/compile_time_choice.S.obj

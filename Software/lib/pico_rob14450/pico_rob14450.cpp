@@ -53,7 +53,9 @@ void ROB14450::drive(int speed)
     //      exceed the possible output value. The second input to the function is the LEVEL
     //      which determines the PWM duty cycle. Duty cycle can be calculated as the 
     //      LEVEL divided by the WRAP.
-    pwm_set_gpio_level(pwma_,std::clamp(abs(speed),0,50000));
+    
+    // pwm_set_gpio_level(pwma_,std::clamp(abs(speed),0,50000));
+    pwm_set_gpio_level(pwma_,50000);
 }
 
 void ROB14450::shortBrake()
