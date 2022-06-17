@@ -8,7 +8,7 @@ const int A2_PIN = 4;
 const int PWMA_PIN = 26;
 
 // Hall Effect Sensor
-const int SENSOR_PIN = 1;
+const int SENSOR_PIN = 27;
 
 // I2C Pins Reserved
 const int SDA = 4;
