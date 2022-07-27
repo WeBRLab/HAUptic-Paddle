@@ -69,19 +69,19 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/src/PD.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/PD.cpp.obj: ../src/PD.cpp
-CMakeFiles/main.dir/src/PD.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/PD.cpp.obj"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PD.cpp.obj -MF CMakeFiles/main.dir/src/PD.cpp.obj.d -o CMakeFiles/main.dir/src/PD.cpp.obj -c /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/src/PD.cpp
+CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/main.cpp.obj: ../src/main.cpp
+CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.obj -MF CMakeFiles/main.dir/src/main.cpp.obj.d -o CMakeFiles/main.dir/src/main.cpp.obj -c /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/src/main.cpp
 
-CMakeFiles/main.dir/src/PD.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/PD.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/src/PD.cpp > CMakeFiles/main.dir/src/PD.cpp.i
+CMakeFiles/main.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
-CMakeFiles/main.dir/src/PD.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/PD.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/src/PD.cpp -o CMakeFiles/main.dir/src/PD.cpp.s
+CMakeFiles/main.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
 CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -732,7 +732,7 @@ CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/src/PD.cpp.obj" \
+"CMakeFiles/main.dir/src/main.cpp.obj" \
 "CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
@@ -784,7 +784,7 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main.elf: CMakeFiles/main.dir/src/PD.cpp.obj
+main.elf: CMakeFiles/main.dir/src/main.cpp.obj
 main.elf: CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 main.elf: CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 main.elf: CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -835,6 +835,7 @@ main.elf: CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common
 main.elf: CMakeFiles/main.dir/build.make
 main.elf: liblcd.a
 main.elf: libmotor_driver.a
+main.elf: libsensor.a
 main.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 main.elf: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX executable main.elf"

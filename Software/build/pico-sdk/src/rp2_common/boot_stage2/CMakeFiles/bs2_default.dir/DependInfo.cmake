@@ -25,6 +25,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/include"
   "/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software"
   "/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/lib/pico_rob14450"
+  "/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/lib/pico_allegroHalleffect"
   "/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/boot_stage2/asminclude"
   "/home/avinash/rpi_pico/pico/pico-sdk/src/rp2040/hardware_regs/include"
   "/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_base/include"

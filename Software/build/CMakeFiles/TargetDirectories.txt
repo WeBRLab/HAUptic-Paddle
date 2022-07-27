@@ -1,4 +1,5 @@
 /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles/lcd.dir
+/home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles/sensor.dir
 /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles/motor_driver.dir
 /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles/main.dir
 /home/avinash/Downloads/Github/WeBR/hAUptic-paddle/Software/build/CMakeFiles/ELF2UF2Build.dir

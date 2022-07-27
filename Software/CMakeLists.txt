@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.12)
 
-#set(PICO_SDK_PATH /home/chandler/External/pico/pico-sdk)
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
 include_directories(include
     ${CMAKE_CURRENT_LIST_DIR}
     ${CMAKE_CURRENT_LIST_DIR}/lib/pico_rob14450
+    ${CMAKE_CURRENT_LIST_DIR}/lib/pico_allegroHalleffect
 )
 
 project(main C CXX ASM)
@@ -23,10 +23,21 @@ target_link_libraries(lcd
     hardware_i2c
 )
 
+# Add and link sensor library
+add_library(sensor
+    lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp
+)
+target_link_libraries(sensor
+    pico_stdlib
+    hardware_adc
+)
+
+
 # Add and link the motor driver library
 add_library(motor_driver
     lib/pico_rob14450/pico_rob14450.cpp
 )
+
 target_link_libraries(motor_driver
     pico_stdlib
     hardware_pwm
@@ -34,13 +45,14 @@ target_link_libraries(motor_driver
 
 # Create the executable for main.cpp
 add_executable(${PROJECT_NAME}
-    src/PD.cpp
+    src/main.cpp
 )
 target_link_libraries(${PROJECT_NAME}
     pico_stdlib
     hardware_adc
     lcd
     motor_driver
+    sensor
 )
 # Generates the binaries for the pico
 pico_add_extra_outputs(${PROJECT_NAME})

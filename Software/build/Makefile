@@ -130,6 +130,19 @@ lcd/fast:
 .PHONY : lcd/fast
 
 #=============================================================================
+# Target rules for targets named sensor
+
+# Build rule for target.
+sensor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor
+.PHONY : sensor
+
+# fast build rule for target.
+sensor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/build
+.PHONY : sensor/fast
+
+#=============================================================================
 # Target rules for targets named motor_driver
 
 # Build rule for target.
@@ -213,6 +226,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.obj: h
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -223,6 +237,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.i: hom
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -233,6 +248,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.s: hom
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -243,6 +259,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/avi
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -253,6 +270,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/avina
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -263,6 +281,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/avina
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -273,6 +292,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/avinash
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -283,6 +303,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.i: home/avinash/r
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -293,6 +314,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.s: home/avinash/r
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -303,6 +325,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.obj: home/avinash/r
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -313,6 +336,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.i: home/avinash/rpi
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -323,6 +347,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.s: home/avinash/rpi
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -333,6 +358,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.obj: home/avinash/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -343,6 +369,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.i: home/avinash/rp
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -353,6 +380,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.s: home/avinash/rp
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -363,6 +391,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: hom
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -373,6 +402,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -383,6 +413,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -393,6 +424,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.obj: home/avin
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -403,6 +435,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.i: home/avinas
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -413,6 +446,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.s: home/avinas
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -423,6 +457,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.obj: home/avinash
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -433,6 +468,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.i: home/avinash/r
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -443,6 +479,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.s: home/avinash/r
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -453,6 +490,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.obj: home/avinash
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -463,6 +501,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.i: home/avinash/r
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -473,6 +512,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.s: home/avinash/r
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -482,6 +522,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/av
 
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
@@ -490,6 +531,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/avin
 
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 
@@ -498,6 +540,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/avin
 
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
@@ -507,6 +550,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: hom
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -517,6 +561,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -527,6 +572,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -537,6 +583,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: h
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -547,6 +594,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: hom
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -557,6 +605,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: hom
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -567,6 +616,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj:
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -577,6 +627,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -587,6 +638,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/av
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -597,6 +649,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/av
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -634,6 +687,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/av
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -644,6 +698,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/avin
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -654,6 +709,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/avin
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -664,6 +720,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chai
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -674,6 +731,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/av
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -684,6 +742,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/avin
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -694,6 +753,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/avin
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -704,6 +764,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -714,6 +775,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/av
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -724,6 +786,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/av
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -734,6 +797,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: hom
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -744,6 +808,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -754,6 +819,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -764,6 +830,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -774,6 +841,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/av
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -784,6 +852,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/av
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -794,6 +863,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -804,6 +874,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/av
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -814,6 +885,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/av
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -824,6 +896,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.ob
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -834,6 +907,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i:
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -844,6 +918,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s:
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -854,6 +929,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -864,6 +940,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/av
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -874,6 +951,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/av
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -884,6 +962,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.ob
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -894,6 +973,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: hom
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -904,6 +984,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -914,6 +995,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -924,6 +1006,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: hom
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -934,6 +1017,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj:
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -944,6 +1028,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.o
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -954,6 +1039,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -964,6 +1050,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -974,6 +1061,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: 
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -984,6 +1072,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: ho
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -994,6 +1083,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: ho
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1004,6 +1094,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shi
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1014,6 +1105,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: h
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1024,6 +1116,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1034,6 +1127,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: 
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1044,6 +1138,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: 
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1054,6 +1149,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: ho
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1064,6 +1160,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1074,6 +1171,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1084,6 +1182,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1094,6 +1193,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1104,6 +1204,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: 
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1114,6 +1215,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: ho
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1124,6 +1226,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: ho
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1134,6 +1237,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.ob
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1144,6 +1248,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: h
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1154,6 +1259,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: hom
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1164,6 +1270,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: hom
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1174,6 +1281,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1184,6 +1292,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/av
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1194,6 +1303,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/av
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1204,6 +1314,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: hom
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1214,6 +1325,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1224,6 +1336,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1234,6 +1347,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_inf
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1244,6 +1358,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_inf
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1254,6 +1369,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_inf
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1264,6 +1380,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: 
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1274,6 +1391,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1284,6 +1402,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1294,6 +1413,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1304,6 +1424,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/av
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1314,6 +1435,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/avin
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1324,6 +1446,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/avin
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1334,6 +1457,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.ob
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1344,6 +1468,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i:
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1354,6 +1479,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s:
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1364,6 +1490,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/
 # target to build an object file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1374,6 +1501,7 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/av
 # target to preprocess a source file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1384,9 +1512,34 @@ home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/av
 # target to generate assembly for a file
 home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcd.dir/build.make CMakeFiles/lcd.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+lib/pico_allegroHalleffect/pico_allegroHalleffect.obj: lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.obj
+.PHONY : lib/pico_allegroHalleffect/pico_allegroHalleffect.obj
+
+# target to build an object file
+lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.obj
+.PHONY : lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.obj
+
+lib/pico_allegroHalleffect/pico_allegroHalleffect.i: lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.i
+.PHONY : lib/pico_allegroHalleffect/pico_allegroHalleffect.i
+
+# target to preprocess a source file
+lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.i
+.PHONY : lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.i
+
+lib/pico_allegroHalleffect/pico_allegroHalleffect.s: lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.s
+.PHONY : lib/pico_allegroHalleffect/pico_allegroHalleffect.s
+
+# target to generate assembly for a file
+lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor.dir/build.make CMakeFiles/sensor.dir/lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.s
+.PHONY : lib/pico_allegroHalleffect/pico_allegroHalleffect.cpp.s
 
 lib/pico_lcd/pico_lcd.obj: lib/pico_lcd/pico_lcd.cpp.obj
 .PHONY : lib/pico_lcd/pico_lcd.obj
@@ -1436,29 +1589,29 @@ lib/pico_rob14450/pico_rob14450.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/lib/pico_rob14450/pico_rob14450.cpp.s
 .PHONY : lib/pico_rob14450/pico_rob14450.cpp.s
 
-src/PD.obj: src/PD.cpp.obj
-.PHONY : src/PD.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-src/PD.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PD.cpp.obj
-.PHONY : src/PD.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-src/PD.i: src/PD.cpp.i
-.PHONY : src/PD.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/PD.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PD.cpp.i
-.PHONY : src/PD.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/PD.s: src/PD.cpp.s
-.PHONY : src/PD.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/PD.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PD.cpp.s
-.PHONY : src/PD.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -1475,6 +1628,7 @@ help:
 	@echo "... lcd"
 	@echo "... main"
 	@echo "... motor_driver"
+	@echo "... sensor"
 	@echo "... home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1594,15 +1748,18 @@ help:
 	@echo "... home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... lib/pico_allegroHalleffect/pico_allegroHalleffect.obj"
+	@echo "... lib/pico_allegroHalleffect/pico_allegroHalleffect.i"
+	@echo "... lib/pico_allegroHalleffect/pico_allegroHalleffect.s"
 	@echo "... lib/pico_lcd/pico_lcd.obj"
 	@echo "... lib/pico_lcd/pico_lcd.i"
 	@echo "... lib/pico_lcd/pico_lcd.s"
 	@echo "... lib/pico_rob14450/pico_rob14450.obj"
 	@echo "... lib/pico_rob14450/pico_rob14450.i"
 	@echo "... lib/pico_rob14450/pico_rob14450.s"
-	@echo "... src/PD.obj"
-	@echo "... src/PD.i"
-	@echo "... src/PD.s"
+	@echo "... src/main.obj"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

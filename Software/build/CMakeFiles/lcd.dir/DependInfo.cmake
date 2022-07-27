@@ -68,6 +68,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../include"
   "../"
   "../lib/pico_rob14450"
+  "../lib/pico_allegroHalleffect"
   "/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/avinash/rpi_pico/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/avinash/rpi_pico/pico/pico-sdk/src/common/pico_base/include"
