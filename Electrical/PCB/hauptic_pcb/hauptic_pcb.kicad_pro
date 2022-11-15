@@ -381,7 +381,7 @@
       "idf": "",
       "netlist": "hauptic_pcb.net",
       "specctra_dsn": "",
-      "step": "../../../../../../../hauptic_pcb.step",
+      "step": "../../hauptic_pcb.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
