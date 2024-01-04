@@ -5,6 +5,6 @@
 By: Auburn University Wearable and Bio-Robotics Lab <br/>
 PI: **Chad G. Rose**  <br/>
 Graduate Researchers: **Chandler Stubbs**, **Rhet Hailey**, **Avinash Baskaran**  <br/>
-Undergraduate Researchers: **Zack Miller**, **Jamison Hood**, <br/>
+Undergraduate Researchers: **Zack Miller**, **Jamison Hood** <br/>
 
 
