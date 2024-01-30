@@ -97,10 +97,8 @@ int main() {
 
     //  START CONTROL LOOP
     while (1){
-        int t = 0;
         count = count +1;
-        printf("\n Commanding: %.2f \n", (float)control_signal);
-        while (t<=100000) {
+        while (true) {
             s_t = time_us_32();
             last_last_position = last_position;
             last_position = current_position;
@@ -108,15 +106,12 @@ int main() {
             current_position = adc_read();
             e_t = time_us_32();
             dt = e_t - s_t;
-            t = t + dt;
             T_ = T_ + dt;
             current_velocity = getVelocity(current_position, last_position,dt);
             printf("%.2f ...", (float)current_velocity);
             printf("%.2f ...", (float)current_position);
             int current_position = adc_read();
             printf("%.2f \n", (float)T_);    
-            control_signal = 0+100*count; 
-            drive(control_signal);
         }
     }
 }

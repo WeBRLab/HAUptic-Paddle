@@ -109,7 +109,7 @@ int main()
         e_t = time_us_32();
         dt = e_t - s_t;
         // current_velocity = getVelocity(current_position, last_position,dt);
-        index = (int)round(count/2000) - 26843*0;
+        index = (int)round(count/2000) - 26843*0  +35;
         printf("\n %.2d ...", (int)index);
         printf("%.2f...", (float)current_position);
         // printf("%.2f...", (float)current_velocity);
@@ -117,7 +117,7 @@ int main()
         printf("%.2f...", (float)s_t);
 
         // control_signal = 5000*sin((int)freqs[index]);
-        control_signal = 5000*sin((float)freqs[index]*(3.1415/32*count));
+        control_signal = 100000*sin((float)freqs[index]*(3.1415/32*count));
         drive(control_signal);
     }
 }
